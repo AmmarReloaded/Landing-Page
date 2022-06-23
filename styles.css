@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -58,8 +60,24 @@ button {
 }
 
 
+button {
+    border-style: none;
+}
+
+
 /* Layout */
+
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+
 body, .header-h1-logo {
+    margin: 0;
+}
+
+h1 {
     margin: 0;
 }
 
@@ -71,4 +89,43 @@ body, .header-h1-logo {
 
 header {
     display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+h1.header-h1-logo {
+    margin: 0 0 0 180px;
+}
+
+.navbar-header-link {
+    padding-right: 180px;
+}
+
+li {
+    margin: 0 10px;
+}
+
+/* Section Hero - Layout */
+
+.hero {
+    display: flex;
+    flex-flow: row;
+    padding: 100px 200px 130px 200px;
+}
+
+.hero-el {
+    width: 50%;
+}
+
+.hero-div {
+    padding-right: 60px;
+}
+
+h2.section-information-header-h2 {
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+section.section-info {
+    padding: 50px 200px 50px 200px;
 }
